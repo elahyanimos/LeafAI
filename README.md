@@ -33,6 +33,10 @@ pip install -r requirements.txt
 ```
 
 3. Download the model file (`plant_disease_classifier.h5`) and place it in the `model/` directory.
+```
+https://drive.google.com/file/d/1QjIRq1B9-iSwY9wNtr3kkmZWg1aZI9-i/view?usp=drive_link
+```
+   
 
 ##  Running the App
 
