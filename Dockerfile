@@ -20,7 +20,7 @@ RUN mkdir ~/.streamlit
 RUN cp config.toml ~/.streamlit/config.toml
 
 # Similar to the previous step, this copies your Streamlit credentials file into the .streamlit directory.
-RUN cp credentials.toml ~/.streamlit/credentials.toml
+# RUN cp credentials.toml ~/.streamlit/credentials.toml
 
 # This sets the default command for the container to run the app with Streamlit.
 ENTRYPOINT ["streamlit", "run"]
