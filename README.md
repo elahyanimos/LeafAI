@@ -9,7 +9,7 @@ A web application that uses deep learning to detect plant diseases from leaf ima
 - Confidence score for predictions
 - User feedback collection system
 - Mobile-friendly interface
-- Dark/Light mode support
+
 
 ##  Requirements
 
