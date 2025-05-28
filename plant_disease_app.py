@@ -96,7 +96,7 @@ def predict_image_class(model, image_path, class_indices):
     return predicted_class_name, confidence
 
 # --- Sidebar Upload ---
-st.sidebar.title("📂 Upload Image")
+st.sidebar.title("Upload Image")
 uploaded_image = st.sidebar.file_uploader(
     "📸 Take or upload a leaf image (use your camera on mobile)",
     type=["jpg", "jpeg", "png"]
@@ -104,7 +104,7 @@ uploaded_image = st.sidebar.file_uploader(
 
 # --- About Section ---
 st.sidebar.markdown("---")
-st.sidebar.title("ℹ️ About")
+st.sidebar.title("About")
 st.sidebar.markdown("""
 This app uses a deep learning model to **classify plant leaf diseases**.
 
@@ -126,7 +126,7 @@ if uploaded_image is not None:
         st.image(image.resize((250, 250)), caption="Uploaded Image", use_column_width=True)
 
     with col2:
-        with st.spinner("🧠 Analyzing image..."):
+        with st.spinner("Analyzing image..."):
             prediction, confidence = predict_image_class(model, uploaded_image, class_indices)
         st.success("✅ Analysis Complete!")
         st.markdown(f"### 🏷️ Disease: `{prediction}`")
